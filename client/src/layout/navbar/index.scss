@@ -29,6 +29,7 @@
       align-items: center;
       gap: 10px;
       .navlik {
+        font-weight: 500;
         &:hover {
           color: red;
         }
@@ -88,6 +89,7 @@
         flex-direction: column;
         gap: 10px;
         .navlik {
+            font-weight: 500;
             color: white;
           &:hover {
             color: red;

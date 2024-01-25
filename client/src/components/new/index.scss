@@ -1,0 +1,48 @@
+#newarr{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    .dev{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        p{
+            font-size: 40px;
+            font-weight:600 ;
+        }
+        .bigbox{
+
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            
+            .box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                flex-direction: column;
+                
+                .img{
+                    width: 300px;
+                }
+                .name{
+                    font-size: 26px;
+                    color: gray;
+                }
+                .price{
+                    font-size: 20px;
+                    color: red;
+                }
+            }
+        }
+        @media only screen and (max-width: 992px) {
+            .bigbox{
+                flex-direction: column;
+            }
+        }
+    }
+}

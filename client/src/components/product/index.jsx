@@ -21,6 +21,12 @@ function Product() {
   return (
     <div id="product">
       <div className="dev">
+        <div className="up">
+            <h2>
+            Popular Items
+            </h2>
+            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+        </div>
         <div className="p">
           {product &&
             product.map((item) => (
@@ -42,6 +48,9 @@ function Product() {
                 </div>
               </div>
             ))}
+        </div>
+        <div className="down">
+            VIEW MORE PRODUCT
         </div>
       </div>
     </div>
