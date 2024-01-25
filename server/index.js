@@ -8,6 +8,7 @@ app.use(cors());
 
 const proSchema = new mongoose.Schema({
   name: String,
+  src:String,
   price: Number,
 });
 
