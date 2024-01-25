@@ -29,7 +29,7 @@ function Wish() {
                   <img src={item.src} alt="" />
                     </Link>
                   <div onClick={()=>handlewish(item)} className="wish">
-                  <i className="fa-regular fa-heart"></i>
+                  <i className="fa-solid fa-heart"></i>
                   </div>
                   <div onClick={()=>handlebasket(item)} className="basket">
                     Add to basket

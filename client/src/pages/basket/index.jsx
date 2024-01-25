@@ -36,7 +36,7 @@ function Basket() {
                         <img src={item.src} alt="" />
                       </Link>
                       <div onClick={() => handlewish(item)} className="wish">
-                        <i className="fa-regular fa-heart"></i>
+                        <i className={`fa-${wish.find(x=>x._id===item._id)?'solid':'regular'} fa-heart`}></i>
                       </div>
                       <div onClick={() => delbasket(item)} className="basket">
                         basket delet basket
