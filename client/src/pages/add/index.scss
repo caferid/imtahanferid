@@ -1,0 +1,50 @@
+#add {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  .form{
+    .yup{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        button{
+            all: unset;
+            padding: 10px;
+            background-color: blue;
+            border-radius: 8px;
+            color: white;
+            margin-bottom: 30px;
+        }
+    }
+  }
+  .butons{
+    display: flex;
+    gap: 10px;
+    button{
+        all: unset;
+        padding: 10px;
+        background-color: rgb(6, 6, 51);
+        border-radius: 8px;
+        color: white;
+        margin-bottom: 30px;
+    }
+  }
+  .table{
+    background-color: rgba(127, 255, 212, 0.358);
+    text-align: center;
+    th{
+        background-color: aquamarine;
+    }
+    tr:nth-child(even){
+        background-color: aquamarine;
+    }
+    .del{
+        cursor: pointer;
+    }
+  }
+}
