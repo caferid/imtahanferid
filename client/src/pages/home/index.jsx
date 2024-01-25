@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import Product from "../../components/product";
 import Header from "../../components/header";
 import Newarr from "../../components/new";
+import Watch from "../../components/Watch";
 function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ function Home() {
         <Header></Header>
         <Newarr></Newarr>
         <Product></Product>
+        <Watch></Watch>
       </div>
     </>
   );
