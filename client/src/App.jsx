@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import { HelmetProvider } from 'react-helmet-async';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.scss";
+import Mainlayout from "./layout/mainlayout";
+import Home from "./pages/home";
+import Add from "./pages/add";
+import Basket from "./pages/basket";
+import Wish from "./pages/wish";
+import Detail from "./pages/detail";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <HelmetProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Mainlayout />}>
+              <Route index element={<Home />} />
+              <Route path="/add" element={<Add />} />
+              <Route path="/wish" element={<Wish />} />
+              <Route path="/basket" element={<Basket />} />
+              <Route path="/detail/:id" element={<Detail />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </HelmetProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

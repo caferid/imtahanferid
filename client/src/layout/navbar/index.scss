@@ -1,0 +1,117 @@
+#navbar {
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 72px;
+  background-color: white;
+  z-index: 3;
+
+  .mobil {
+    display: none;
+  }
+  .dev {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      width: 110px;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      .navlik {
+        &:hover {
+          color: red;
+        }
+      }
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      .navlik {
+        &:hover {
+          color: red;
+        }
+      }
+      font-size: 22px;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .dev {
+      display: none;
+    }
+    .mobil {
+      width: 90%;
+      margin: auto;
+      height: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        width: 110px;
+      }
+      .links {
+        display: none;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // gap: 10px;
+        // .navlik{
+        //     &:hover{
+        //         color: red;
+        //     }
+        // }
+      }
+      .open {
+        padding: 10px;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        .navlik {
+            color: white;
+          &:hover {
+            color: red;
+          }
+        }
+        .icons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          .navlik {
+            &:hover {
+              color: red;
+            }
+          }
+          font-size: 22px;
+        }
+      }
+      .bars{
+        font-size: 26px;
+      }
+    }
+  }
+}
+.active {
+  color: red !important;
+}
