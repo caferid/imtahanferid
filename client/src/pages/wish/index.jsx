@@ -21,7 +21,7 @@ function Wish() {
           <p>{item.name}</p>
         </p>
          ))} */}
-          {wish &&
+          {wish.length!==0? wish &&
             wish.map((item) => (
               <div className="bigbox" key={item._id}>
                 <div className="img">
@@ -40,7 +40,7 @@ function Wish() {
                   <div className="price">$ {item.price}</div>
                 </div>
               </div>
-            ))}
+            )):<p>wish bosdur</p>}
 
         </div>
       </div>
